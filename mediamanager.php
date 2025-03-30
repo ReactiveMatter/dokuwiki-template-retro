@@ -7,7 +7,8 @@
  */
 // must be run from within DokuWiki
 if (!defined('DOKU_INC')) die();
-@require_once(dirname(__FILE__).'/tpl_functions.php'); /* include hook for template functions */
+
+@require_once(dirname(__FILE__).'/template_plugin.php'); /* include hook for template functions */
 
 ?><!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $conf['lang']?>"
@@ -25,8 +26,8 @@ if (!defined('DOKU_INC')) die();
     <?php tpl_includeFile('meta.html') ?>
 </head>
 
-<body>
-    <div id="media__manager" class="<?php echo tpl_classes(); ?>">
+<body <?=tpl_minimal_classes()?>>
+    <div id="media__manager">
         <?php html_msgarea() ?>
         <nav id="mediamgr__aside"><div class="pad">
             <h1><?php echo hsc($lang['mediaselect'])?></h1>

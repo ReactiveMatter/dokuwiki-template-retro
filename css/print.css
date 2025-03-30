@@ -5,7 +5,7 @@
  */
 
 body {
-    font: normal 87.5%/1.3 Garamond, Baskerville, "Hoefler Text", "Nimbus Roman No9 L", serif;
+    font: sans-serif;
     background-color: #fff;
     color: #000;
 }
@@ -19,7 +19,8 @@ video,
 .dokuwiki .toc,
 #dw__toc,
 #dokuwiki__pagetools,
-#dokuwiki__footer {
+#dokuwiki__footer,
+.plain-toolbar {
     display: none;
 }
 
@@ -152,4 +153,10 @@ th {
     clear: both;
     border-top: 1pt solid #000;
     margin-top: 10pt;
+}
+
+
+navbar, .site-header, footer, .page-info
+{
+    display: none;
 }
