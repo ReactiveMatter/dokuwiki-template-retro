@@ -38,6 +38,7 @@ $tpl_retro_classes =  tpl_classes().$toc.$width.$theme;
 
 
 <body class="<?=$tpl_retro_classes?>">
+<div id="dokuwiki__top"></div>
 <navbar id="navbar" class="container" role="navigation" aria-label="Main navigation">
         <div id='showhidesidemenu' class="mobile icon">
             <div class="button"></div>
@@ -115,7 +116,6 @@ $tpl_retro_classes =  tpl_classes().$toc.$width.$theme;
     <?php endif?>
 
 <div id="main">
-        <div id="#dokuwiki__top"></div>
         <article id="content">
             <?php tpl_flush();
                 if($conf['tocminheads']>0)
