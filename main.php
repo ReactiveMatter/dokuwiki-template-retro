@@ -79,11 +79,12 @@ $tpl_retro_classes =  tpl_classes().$toc.$width.$theme;
            {echo (new \dokuwiki\Menu\SiteMenu())->getListItems();}
             ?>
             <?php if(strpos(tpl_getConf('topToolBar'), 'user') !== false)
-           {echo (new \dokuwiki\Menu\UserMenu())->getListItems();}
+           {
+            echo (new \dokuwiki\Menu\UserMenu())->getListItems();
+            if($USERINFO) { echo '<li>('.$USERINFO['name'].')</li>'; }
+           }
             ?>
-            <?php if($USERINFO) {
-                echo '<li>('.$USERINFO['name'].')</li>';
-            }?>
+            
         </div>
     <?php endif; ?>
     
@@ -143,11 +144,12 @@ $tpl_retro_classes =  tpl_classes().$toc.$width.$theme;
            {echo (new \dokuwiki\Menu\SiteMenu())->getListItems();}
             ?>
             <?php if(strpos(tpl_getConf('bottomToolBar'), 'user') !== false)
-           {echo (new \dokuwiki\Menu\UserMenu())->getListItems();}
+           {echo (new \dokuwiki\Menu\UserMenu())->getListItems();
+            if($USERINFO) { echo '<li>('.$USERINFO['name'].')</li>'; }
+
+           }
             ?>
-             <?php if($USERINFO) {
-                echo '<li>('.$USERINFO['name'].')</li>';
-            }?>
+
         </div>
     <?php endif; ?>
         <?php 
