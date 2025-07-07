@@ -312,12 +312,16 @@ kbd {
     color: __text__;
     direction: ltr;
     text-align: left;
+    text-wrap: wrap;
+    word-wrap: break-word;
 }
 pre {
     border: 1px solid __border__;
     padding: 0 .2em;
     overflow: auto;
     word-wrap: normal;
+    text-wrap: wrap;
+    word-wrap: break-word;
 }
 
 blockquote {
