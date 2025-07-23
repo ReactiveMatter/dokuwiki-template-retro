@@ -8,7 +8,8 @@
         margin-right: 0px;
      }
 
-     navbar .right-column, navbar .right-column .search, navbar .right-column .search input 
+     navbar .right-column, navbar .right-column .search, navbar .right-column .search input, navbar #qsearch__out
+
      {
         width: 100%;
      }
