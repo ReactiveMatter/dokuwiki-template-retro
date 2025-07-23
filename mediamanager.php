@@ -23,8 +23,20 @@ if (!defined('DOKU_INC')) die();
     <?php echo tpl_favicon(array('favicon', 'mobile')) ?>
     <?php tpl_includeFile('meta.html') ?>
 </head>
+<?php
 
-<body <?=tpl_minimal_classes()?>>
+$theme = '';
+if(tpl_getConf('theme')!='Default')
+{
+    $theme = ' theme-'.strtolower(tpl_getConf('theme'));
+}
+
+$toc = tpl_getConf('inlineToc')?' itoc':'';
+$width = tpl_getConf('fullWidthSite')?' full-width':'';
+$tpl_retro_classes =  tpl_classes().$toc.$width.$theme;
+?>
+
+<body <?=tpl_retro_classes()?>>
     <div id="media__manager">
         <?php html_msgarea() ?>
         <nav id="mediamgr__aside"><div class="pad">
