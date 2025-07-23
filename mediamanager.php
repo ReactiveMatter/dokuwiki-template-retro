@@ -36,7 +36,7 @@ $width = tpl_getConf('fullWidthSite')?' full-width':'';
 $tpl_retro_classes =  tpl_classes().$toc.$width.$theme;
 ?>
 
-<body <?=tpl_retro_classes()?>>
+<body <?=$tpl_retro_classes?>>
     <div id="media__manager">
         <?php html_msgarea() ?>
         <nav id="mediamgr__aside"><div class="pad">
