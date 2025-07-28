@@ -116,7 +116,7 @@ $tpl_retro_classes =  tpl_classes().$toc.$width.$theme;
     </div>
     <?php endif?>
 
-<div id="main">
+<main id="main">
         <article id="content">
             <?php tpl_flush();
                 if($conf['tocminheads']>0)
@@ -150,7 +150,7 @@ $tpl_retro_classes =  tpl_classes().$toc.$width.$theme;
            }
             ?>
 
-        </div>
+        </main>
     <?php endif; ?>
         <?php 
     if(page_exists(":footer") && auth_quickaclcheck(":footer"))

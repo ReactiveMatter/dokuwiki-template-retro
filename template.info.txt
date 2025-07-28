@@ -1,7 +1,7 @@
 base     retro
 author   Reactive Matter
 email    reactivematter@protonmail.com
-date     2025-07-24
+date     2025-07-28
 name     Retro
 desc     The DokuWiki template that gets you started with a minimalastic retro look
 url      https://www.dokuwiki.org/template:retro
